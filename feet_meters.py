@@ -24,14 +24,22 @@ def main():
         print()
 
         if choice == "a":
-            pass
+            feet = float(input("Enter feet: "))
+            meters = c.to_meters(feet)
+            print(round(meters, 2), "meters")
         elif choice == "b":
-            pass
+            meters = float(input("Enter meters: "))
+            feet = c.to_feet(meters)
+            print(round(feet, 2), "feet")
         else:
-            print("you did not enter a valid selection.")
+            print("You did not enter a valid selection.")
         print()
 
         again = input("Would you like to perform another conversion? (y/n): ")
         print()
 
     print("Thanks, bye!")
+
+
+if __name__ == "__main__":
+    main()
